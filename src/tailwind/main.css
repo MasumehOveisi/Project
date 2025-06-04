@@ -1,0 +1,45 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@font-face {
+    font-family: estedad;
+    src: url(../fonts/Estedad-Bold.ttf);
+}
+
+@font-face {
+    font-family: e-light;
+    src: url(../fonts/Estedad-Light.ttf);
+}
+
+@theme {
+    --font-estedad: estedad;
+    --font-e-light: e-light;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    background-color: #194BF0;
+}
+
+input[type="checkbox"]:not(:checked) {
+    background-color: white;
+    border-color: #727272;
+}
+
+input[type="radio"].accordin {
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    color: #194BF0;
+}
+
+input[type="radio"]:not(:checked) {
+    background-color: white;
+}
+
+
+
+.bg-custom {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../src/images/bg2.jpg);
+}
